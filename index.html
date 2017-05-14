@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/Tab.js"></script>
+	</head>
+	<body>
+		<div id="main"></div>
+		
+		<div class="Template">
+			<div class="Tab">
+				<webview class="Webview"  src="" partition="persist:googlepluswidgets"></webview>
+				
+				<table class="TitleBar" border="0" >
+					<tr>
+					<td><img class="Button" id="back"    src="img/arrow_left.png" /></td>
+					<td><img class="Button" id="forward" src="img/arrow_right.png" /></td>
+					<td><img class="Button" id="reload"  src="img/reload.png" /></td>
+					<td><img class="Button" id="home"    src="img/home.png" /></td>
+					<td width="99%">
+						<input type="text" class="Url" spellcheck="false" />
+					</td>
+					<td><img class="Button" id="star"   src="img/star.png" /></td>
+					<td><img class="Button" id="resize" src="img/window-big.png" /></td>
+					</tr>
+				</table>
+				
+				<div class="Dialog">
+					<div class="DialogMask"></div>
+					<div class="DialogBody">
+						<div id="dialogMessage">Message<br>aaaaaaaaaaaaaa</div>
+						<input type="text" id="dialogInput" spellcheck="false" />
+						<div class="DialogButtons">
+							<span id="dialogOK"> OK </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

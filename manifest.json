@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "9-Tile",
+    "description": "9-tiled webview App",
+    "version": "0.0.1",
+    "app": {
+        "background": {
+            "scripts": ["js/background.js"]
+        }
+    },
+    "icons": {
+        "16": "icon/icon-16.png",
+        "48": "icon/icon-48.png",
+        "128": "icon/icon-128.png"
+    },
+    "permissions": [
+        "webview","storage"
+    ]
+}

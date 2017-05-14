@@ -1,0 +1,141 @@
+html, body, div, p {
+    margin: 0;
+    padding: 0;
+}
+html, body, .Tab {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	overflow: hidden;
+}
+
+.Tab {
+	position: relative;
+	margin-top: 1px;
+	margin-left: 1px;
+	width: 33%;
+	height: 33%;
+	border: 1px solid #80a0a0;
+	border-radius: 10px;
+	float:left;
+	z-index: 0;
+	overflow: hidden;
+}
+.TitleBar {
+	position: absolute;
+	top:0;
+	box-sizing: border-box;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background: #e0e0e0;
+	width: 100%;
+	overflow: auto;
+	border-bottom: 1px solid #888888;
+}
+td {
+	margin: 0;
+	padding:0;
+}
+
+.TitleBar .Button {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+.Button {
+	border: 1px solid transparent;
+}
+.Button:hover {
+	border: 1px outset;
+}
+
+.Url {
+	width:100%;
+	font-size: 12px;
+}
+
+.Webview {
+    display: block;
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	padding-top: 24px;
+
+	width:100%;
+	height:100%;
+	border: 0px;
+	overflow: hidden;
+	background: #ffffff;
+}
+.Template {
+	display: none;
+}
+#main {
+	width:100%;
+	height:100%;
+	border: 0px;
+}
+
+
+
+.Dialog {
+	display: none;
+	position: absolute;
+	width:100%;
+	height:100%;
+	z-index: 100;
+}
+.DialogMask {
+	position: absolute;
+	width:100%;
+	height:100%;
+	background: #000000;
+	opacity:0.5; 
+}
+.DialogBody {
+	display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+	margin: auto;
+	width: 50%;
+	height: auto;
+	background: #ffffff;
+	border: 1px solid #444444;
+	opacity:1.0; 
+	box-sizing: border-box;
+	padding: 4px;
+}
+
+#dialogTitle {
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	background: #a0f0f0;
+}
+#dialogMessage {
+	font-size: 12px;
+	overflow: hidden;
+}
+#dialogInput {
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 4px;
+}
+.DialogButtons {
+	bottom: 0;
+}
+#dialogOK {
+	padding: 0 8px;
+	float: right;
+	font-size: 14px;
+	background: #c0c0c0;
+	margin: 2px;
+	cursor: pointer;
+}
+
+
+
