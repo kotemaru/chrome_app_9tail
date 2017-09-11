@@ -50,6 +50,9 @@ td {
 .Button:hover {
 	border: 1px outset;
 }
+.Button:active {
+	border: 1px inset;
+}
 
 .Url {
 	width:100%;

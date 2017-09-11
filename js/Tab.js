@@ -19,10 +19,16 @@ function Tab(){this.initialize.apply(this, arguments)};
 		$elem.find("#star").bind('click', function() {self.register();});
 		$elem.find("#resize").bind('click', function() {self.resize();});
 		this.$url.bind('keyup', function(event) {
-			if (event.which != 13) return true;
-			self.syncLocation();
-			return false;
+			if (event.which == 13) {
+				self.syncLocation();
+				return false;
+			} else if (event.ctrlKey && event.which == 82) { // CTRL+R
+				self.onLoadstart(event);
+				return false;
+			}
+			return true;
 		});
+
 		
 		this.webview.addEventListener('loadstart', function(ev){self.onLoadstart(ev);});
 		this.webview.addEventListener('newwindow', function(ev){self.onNewWindow(ev);});
